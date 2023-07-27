@@ -1,0 +1,40 @@
+@namespace Project.Shared
+@using Project.Shared.Buttons
+
+<div class="d-flex flex-row">
+  <div class="d-flex align-center mr-n5">
+    <div class="button-column">
+      <div class="rounded-circle button-column-1">
+        <OutlineIconButton
+        ></OutlineIconButton>
+      </div>
+
+      <div class="rounded-circle">
+        <OutlineIconButton
+          Icon="@Icons.Material.Filled.Dialpad"
+        ></OutlineIconButton>
+      </div>
+
+      <div class="rounded-circle">
+        <OutlineIconButton
+          Icon="@Icons.Material.Filled.PhoneDisabled"
+        ></OutlineIconButton>
+      </div>
+    </div>
+  </div>
+
+  <div class="pa-4 d-flex flex-1 align-center flex-column border-solid border-2 mud-border-primary pa-4 rounded-xl">
+    <MudIcon Icon="@Icons.Material.Filled.Call" Color="Color.Primary" />
+
+    Call Duration
+    <h5 class="mb-0">
+      TIMER
+    </h5>
+    Connected...
+
+    <div class="d-flex flex-1 align-center flex-column mt-2">
+      <h2 class="mb-0">@Borrower.FirstName @Borrower.LastName</h2>
+      <h5>@NumberToDial</h5>
+    </div>
+  </div>
+</div>

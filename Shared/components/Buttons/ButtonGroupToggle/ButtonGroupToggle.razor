@@ -1,0 +1,23 @@
+@namespace Project.Shared.Buttons
+@using Project.Models
+
+<MudButtonGroup 
+  class="button-group"
+  Color="Color.Primary" 
+  Variant="Variant.Outlined"
+  OverrideStyles="@false"
+>
+  @for (int i = 0; i < Buttons.Count; i++) {
+    int index = i;
+    ButtonGroupButton buttonData = Buttons[index];
+
+    <MudButton
+      class="@(GetCssClass(index))"
+      Variant="GetVariant(index)"
+      OnClick="() => HandleClick(index)"
+      Color="Color.Primary"
+    >
+      @buttonData.Label
+    </MudButton>
+  }
+</MudButtonGroup>

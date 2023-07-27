@@ -1,0 +1,40 @@
+﻿@page "/counter"
+@namespace Project.Pages
+@using Project.Shared.Buttons
+@using Project.Shared
+
+<PageTitle>Counter</PageTitle>
+
+<div class="page d-flex flex-1 flex-column">
+  <div>
+    <OutlineButton
+      Label="Test"
+    ></OutlineButton>  
+  </div>
+
+  <div>
+    <OutlineIconButton
+      Icon="@Icons.Material.Outlined.Microwave"
+    ></OutlineIconButton>
+  </div>
+
+  <div>
+    <ButtonGroupToggle
+      Buttons="ButtonGroupButtons"
+    ></ButtonGroupToggle>
+
+  </div>
+
+  <div>
+    <Dialer
+      Borrower="@borrower"
+      NumberToDial="@borrower.MobileNumber"
+    ></Dialer>
+  </div>
+
+  <div>
+    <Pipeline
+      Leads="Leads"
+    ></Pipeline>    
+  </div>    
+</div>

@@ -1,0 +1,35 @@
+@namespace Project.Shared
+
+<div class="borrower-card pl-1">
+  <div class="pl-1 d-flex flex-column">
+    <span class="font-12">Borrower</span>
+    <span>@Borrower.FirstName @Borrower.LastName</span>
+  </div>
+
+  <div class="mt-1">
+    <MudIcon
+      class="p-0"
+      Size="Size.Small"
+      Icon="@Icons.Material.Filled.MobileScreenShare"
+    ></MudIcon>
+    <span>M @Borrower.MobileNumber</span>
+  </div>
+
+  <div>
+    <MudIcon 
+      class="p-0"
+      Size="Size.Small"
+      Icon="@Icons.Material.Filled.Home"
+    ></MudIcon>
+    <span>H @Borrower.HomeNumber</span>
+  </div>
+
+  <div>
+    <MudIcon
+      class="p-0"
+      Size="Size.Small"
+      Icon="@Icons.Material.Filled.Work"
+    ></MudIcon>
+    <span>W @Borrower.WorkNumber</span>
+  </div>
+</div>

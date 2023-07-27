@@ -1,0 +1,10 @@
+.button-column {
+  backface-visibility: hidden;
+  background-color: white;
+
+  div {
+    background-color: beige !important;
+    backface-visibility: hidden;
+    padding: 5px;
+  }
+}
